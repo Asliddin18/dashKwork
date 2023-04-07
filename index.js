@@ -181,7 +181,7 @@ app.get('/category', (req, res) => {
     res.status(200).send(category)
 
 })
-app.post('/category',autificationToken, (req, res) => {
+app.post('/category', (req, res) => {
     const user = JSON.parse(fs.readFileSync('./data.json', "utf-8"))
     var bolion = true
     user.map(item => {
